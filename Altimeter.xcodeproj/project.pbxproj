@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03035904FC693125248E9D6A /* Pods_Altimeter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2729B3EC5A991BB0E16E155 /* Pods_Altimeter.framework */; };
+		2D144B9C2296AA2A0003B0A2 /* Double+AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144B9B2296AA2A0003B0A2 /* Double+AttributedString.swift */; };
+		2D144B9E2296AB0A0003B0A2 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D144B9D2296AB0A0003B0A2 /* Const.swift */; };
+		2D3C38EA21D6A21000A43EDF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3C38E921D6A21000A43EDF /* LocationManager.swift */; };
+		2D83DF5C2188E7B100A8EDF5 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D83DF5B2188E7B100A8EDF5 /* NotificationCenter.framework */; };
+		2D83DF5F2188E7B100A8EDF5 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D83DF5E2188E7B100A8EDF5 /* TodayViewController.swift */; };
+		2D83DF622188E7B100A8EDF5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D83DF602188E7B100A8EDF5 /* MainInterface.storyboard */; };
+		2D83DF662188E7B100A8EDF5 /* AltimeterWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2D83DF592188E7B100A8EDF5 /* AltimeterWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2DA796062180852100A59A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA796052180852100A59A1F /* AppDelegate.swift */; };
+		2DA796082180852100A59A1F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA796072180852100A59A1F /* MainVC.swift */; };
+		2DA7960B2180852100A59A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA796092180852100A59A1F /* Main.storyboard */; };
+		2DA7960D2180852300A59A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA7960C2180852300A59A1F /* Assets.xcassets */; };
+		2DA796102180852300A59A1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA7960E2180852300A59A1F /* LaunchScreen.storyboard */; };
+		2DA7961821809B6D00A59A1F /* UIColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA7961721809B6D00A59A1F /* UIColor+HEX.swift */; };
+		2DA7961A2180CF2200A59A1F /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA796192180CF2200A59A1F /* MapVC.swift */; };
+		2DA7962221878D0700A59A1F /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA7962121878D0700A59A1F /* Icons.swift */; };
+		2DA7962421879D0200A59A1F /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA7962321879D0200A59A1F /* Downloader.swift */; };
+		2DA7962721879D4300A59A1F /* WeatherResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA7962621879D4300A59A1F /* WeatherResponseModels.swift */; };
+		2DA796292187A11500A59A1F /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA796282187A11500A59A1F /* Day.swift */; };
+		374A85FB2B3C615CE522EFCE /* Pods_AltimeterWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D3836084279F619C8C9175 /* Pods_AltimeterWidget.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D83DF642188E7B100A8EDF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DA795FA2180852100A59A1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D83DF582188E7B100A8EDF5;
+			remoteInfo = AltimeterWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D83DF6A2188E7B100A8EDF5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2D83DF662188E7B100A8EDF5 /* AltimeterWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09D3836084279F619C8C9175 /* Pods_AltimeterWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AltimeterWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D144B9B2296AA2A0003B0A2 /* Double+AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+AttributedString.swift"; sourceTree = "<group>"; };
+		2D144B9D2296AB0A0003B0A2 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		2D3C38E921D6A21000A43EDF /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2D83DF592188E7B100A8EDF5 /* AltimeterWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AltimeterWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D83DF5B2188E7B100A8EDF5 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2D83DF5E2188E7B100A8EDF5 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		2D83DF612188E7B100A8EDF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2D83DF632188E7B100A8EDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA796022180852100A59A1F /* Altimeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Altimeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA796052180852100A59A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DA796072180852100A59A1F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		2DA7960A2180852100A59A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DA7960C2180852300A59A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DA7960F2180852300A59A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DA796112180852300A59A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA7961721809B6D00A59A1F /* UIColor+HEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HEX.swift"; sourceTree = "<group>"; };
+		2DA796192180CF2200A59A1F /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		2DA7962121878D0700A59A1F /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		2DA7962321879D0200A59A1F /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		2DA7962621879D4300A59A1F /* WeatherResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseModels.swift; sourceTree = "<group>"; };
+		2DA796282187A11500A59A1F /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		2F9691011CD102A4002DA971 /* Pods-AltimeterWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltimeterWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-AltimeterWidget/Pods-AltimeterWidget.release.xcconfig"; sourceTree = "<group>"; };
+		694A55933239FBE31E7E412F /* Pods-Altimeter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Altimeter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Altimeter/Pods-Altimeter.release.xcconfig"; sourceTree = "<group>"; };
+		B45A934A80CA289CFF1FA24B /* Pods-Altimeter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Altimeter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Altimeter/Pods-Altimeter.debug.xcconfig"; sourceTree = "<group>"; };
+		C2729B3EC5A991BB0E16E155 /* Pods_Altimeter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Altimeter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B1A604FB29ECD2FE965A63 /* Pods-AltimeterWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AltimeterWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AltimeterWidget/Pods-AltimeterWidget.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D83DF562188E7B100A8EDF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D83DF5C2188E7B100A8EDF5 /* NotificationCenter.framework in Frameworks */,
+				374A85FB2B3C615CE522EFCE /* Pods_AltimeterWidget.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA795FF2180852100A59A1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03035904FC693125248E9D6A /* Pods_Altimeter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D144B992296A15A0003B0A2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2DA7962321879D0200A59A1F /* Downloader.swift */,
+				2D3C38E921D6A21000A43EDF /* LocationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2D144B9A2296A16C0003B0A2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2DA796282187A11500A59A1F /* Day.swift */,
+				2DA7962121878D0700A59A1F /* Icons.swift */,
+				2D144B9D2296AB0A0003B0A2 /* Const.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2D83DF5A2188E7B100A8EDF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D83DF5B2188E7B100A8EDF5 /* NotificationCenter.framework */,
+				C2729B3EC5A991BB0E16E155 /* Pods_Altimeter.framework */,
+				09D3836084279F619C8C9175 /* Pods_AltimeterWidget.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D83DF5D2188E7B100A8EDF5 /* AltimeterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2D83DF5E2188E7B100A8EDF5 /* TodayViewController.swift */,
+				2D83DF602188E7B100A8EDF5 /* MainInterface.storyboard */,
+				2D83DF632188E7B100A8EDF5 /* Info.plist */,
+			);
+			path = AltimeterWidget;
+			sourceTree = "<group>";
+		};
+		2DA795F92180852100A59A1F = {
+			isa = PBXGroup;
+			children = (
+				2DA796042180852100A59A1F /* Altimeter */,
+				2D83DF5D2188E7B100A8EDF5 /* AltimeterWidget */,
+				2D83DF5A2188E7B100A8EDF5 /* Frameworks */,
+				2DA796032180852100A59A1F /* Products */,
+				86513CD57656FF25921D928B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2DA796032180852100A59A1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DA796022180852100A59A1F /* Altimeter.app */,
+				2D83DF592188E7B100A8EDF5 /* AltimeterWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DA796042180852100A59A1F /* Altimeter */ = {
+			isa = PBXGroup;
+			children = (
+				2DA7961B2180CF2800A59A1F /* VCs */,
+				2DA796202181093100A59A1F /* Storyboards */,
+				2D144B992296A15A0003B0A2 /* Services */,
+				2DA7961F2181092900A59A1F /* Model */,
+				2D144B9A2296A16C0003B0A2 /* Helpers */,
+				2DA7961C2180CF3400A59A1F /* Extensions */,
+				2DA7960C2180852300A59A1F /* Assets.xcassets */,
+				2DA796052180852100A59A1F /* AppDelegate.swift */,
+				2DA7960E2180852300A59A1F /* LaunchScreen.storyboard */,
+				2DA796112180852300A59A1F /* Info.plist */,
+			);
+			path = Altimeter;
+			sourceTree = "<group>";
+		};
+		2DA7961B2180CF2800A59A1F /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				2DA796072180852100A59A1F /* MainVC.swift */,
+				2DA796192180CF2200A59A1F /* MapVC.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		2DA7961C2180CF3400A59A1F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2DA7961721809B6D00A59A1F /* UIColor+HEX.swift */,
+				2D144B9B2296AA2A0003B0A2 /* Double+AttributedString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2DA7961F2181092900A59A1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DA7962621879D4300A59A1F /* WeatherResponseModels.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DA796202181093100A59A1F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2DA796092180852100A59A1F /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		86513CD57656FF25921D928B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B45A934A80CA289CFF1FA24B /* Pods-Altimeter.debug.xcconfig */,
+				694A55933239FBE31E7E412F /* Pods-Altimeter.release.xcconfig */,
+				E0B1A604FB29ECD2FE965A63 /* Pods-AltimeterWidget.debug.xcconfig */,
+				2F9691011CD102A4002DA971 /* Pods-AltimeterWidget.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D83DF582188E7B100A8EDF5 /* AltimeterWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D83DF672188E7B100A8EDF5 /* Build configuration list for PBXNativeTarget "AltimeterWidget" */;
+			buildPhases = (
+				3CC9FA0DAE29BD5C6C5E214E /* [CP] Check Pods Manifest.lock */,
+				2D83DF552188E7B100A8EDF5 /* Sources */,
+				2D83DF562188E7B100A8EDF5 /* Frameworks */,
+				2D83DF572188E7B100A8EDF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AltimeterWidget;
+			productName = AltimeterWidget;
+			productReference = 2D83DF592188E7B100A8EDF5 /* AltimeterWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		2DA796012180852100A59A1F /* Altimeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA796142180852300A59A1F /* Build configuration list for PBXNativeTarget "Altimeter" */;
+			buildPhases = (
+				330D49CC0A0AFFE3A1FC5B9E /* [CP] Check Pods Manifest.lock */,
+				2DA795FE2180852100A59A1F /* Sources */,
+				2DA795FF2180852100A59A1F /* Frameworks */,
+				2DA796002180852100A59A1F /* Resources */,
+				2D83DF6A2188E7B100A8EDF5 /* Embed App Extensions */,
+				2D8B0E7A218C45C100C57B6A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D83DF652188E7B100A8EDF5 /* PBXTargetDependency */,
+			);
+			name = Altimeter;
+			productName = Altimeter;
+			productReference = 2DA796022180852100A59A1F /* Altimeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DA795FA2180852100A59A1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Ilya Virnik";
+				TargetAttributes = {
+					2D83DF582188E7B100A8EDF5 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
+					};
+					2DA796012180852100A59A1F = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 2DA795FD2180852100A59A1F /* Build configuration list for PBXProject "Altimeter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DA795F92180852100A59A1F;
+			productRefGroup = 2DA796032180852100A59A1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DA796012180852100A59A1F /* Altimeter */,
+				2D83DF582188E7B100A8EDF5 /* AltimeterWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D83DF572188E7B100A8EDF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D83DF622188E7B100A8EDF5 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA796002180852100A59A1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA796102180852300A59A1F /* LaunchScreen.storyboard in Resources */,
+				2DA7960D2180852300A59A1F /* Assets.xcassets in Resources */,
+				2DA7960B2180852100A59A1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D8B0E7A218C45C100C57B6A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" a0c7a5a54ec95ead91a656939ce379e4eda9a499 713f19a34d770165d8b749761b20211014d510a32252e7f9f96bc26a0c7cc020\n";
+		};
+		330D49CC0A0AFFE3A1FC5B9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Altimeter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CC9FA0DAE29BD5C6C5E214E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AltimeterWidget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D83DF552188E7B100A8EDF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D83DF5F2188E7B100A8EDF5 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA795FE2180852100A59A1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA796082180852100A59A1F /* MainVC.swift in Sources */,
+				2DA7962221878D0700A59A1F /* Icons.swift in Sources */,
+				2DA7962421879D0200A59A1F /* Downloader.swift in Sources */,
+				2DA7961A2180CF2200A59A1F /* MapVC.swift in Sources */,
+				2DA796292187A11500A59A1F /* Day.swift in Sources */,
+				2DA7961821809B6D00A59A1F /* UIColor+HEX.swift in Sources */,
+				2DA796062180852100A59A1F /* AppDelegate.swift in Sources */,
+				2DA7962721879D4300A59A1F /* WeatherResponseModels.swift in Sources */,
+				2D3C38EA21D6A21000A43EDF /* LocationManager.swift in Sources */,
+				2D144B9C2296AA2A0003B0A2 /* Double+AttributedString.swift in Sources */,
+				2D144B9E2296AB0A0003B0A2 /* Const.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D83DF652188E7B100A8EDF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D83DF582188E7B100A8EDF5 /* AltimeterWidget */;
+			targetProxy = 2D83DF642188E7B100A8EDF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D83DF602188E7B100A8EDF5 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D83DF612188E7B100A8EDF5 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		2DA796092180852100A59A1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA7960A2180852100A59A1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DA7960E2180852300A59A1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA7960F2180852300A59A1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D83DF682188E7B100A8EDF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0B1A604FB29ECD2FE965A63 /* Pods-AltimeterWidget.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B5C9S3ZAW2;
+				INFOPLIST_FILE = AltimeterWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.ilya.virnik.Altimeter.AltimeterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D83DF692188E7B100A8EDF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F9691011CD102A4002DA971 /* Pods-AltimeterWidget.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B5C9S3ZAW2;
+				INFOPLIST_FILE = AltimeterWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.ilya.virnik.Altimeter.AltimeterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2DA796122180852300A59A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2DA796132180852300A59A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DA796152180852300A59A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45A934A80CA289CFF1FA24B /* Pods-Altimeter.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = B5C9S3ZAW2;
+				INFOPLIST_FILE = Altimeter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.ilya.virnik.Altimeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DA796162180852300A59A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694A55933239FBE31E7E412F /* Pods-Altimeter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B5C9S3ZAW2;
+				INFOPLIST_FILE = Altimeter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.ilya.virnik.Altimeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D83DF672188E7B100A8EDF5 /* Build configuration list for PBXNativeTarget "AltimeterWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D83DF682188E7B100A8EDF5 /* Debug */,
+				2D83DF692188E7B100A8EDF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA795FD2180852100A59A1F /* Build configuration list for PBXProject "Altimeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA796122180852300A59A1F /* Debug */,
+				2DA796132180852300A59A1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA796142180852300A59A1F /* Build configuration list for PBXNativeTarget "Altimeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA796152180852300A59A1F /* Debug */,
+				2DA796162180852300A59A1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DA795FA2180852100A59A1F /* Project object */;
+}

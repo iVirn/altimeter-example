@@ -1,0 +1,6 @@
+framework module Pods_AltimeterWidget {
+  umbrella header "Pods-AltimeterWidget-umbrella.h"
+
+  export *
+  module * { export * }
+}

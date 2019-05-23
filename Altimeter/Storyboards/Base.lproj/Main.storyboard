@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1ln-W1-5yh">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Altimeter-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Altimeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jvc-Rv-10N">
+                                <rect key="frame" x="72.666666666666686" y="203" width="230" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="COx-M5-sKX"/>
+                                    <constraint firstAttribute="height" constant="230" id="qFt-FG-Mfc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF7-FX-l6f">
+                                <rect key="frame" x="136.66666666666666" y="232" width="101.66666666666666" height="172"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="144"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Eoe-ME-zDl">
+                                <rect key="frame" x="74.666666666666671" y="463" width="225.66666666666663" height="86"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Measuring..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ou-wx-U4s">
+                                        <rect key="frame" x="0.0" y="0.0" width="225.66666666666666" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="36"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Measuring..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1C6-lk-kOo">
+                                        <rect key="frame" x="0.0" y="43" width="225.66666666666666" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="36"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.12941176470588234" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.094117647058823528" green="0.12941176470588234" blue="0.14901960784313725" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CF7-FX-l6f" firstAttribute="centerX" secondItem="jvc-Rv-10N" secondAttribute="centerX" id="4Dv-3S-aDb"/>
+                            <constraint firstItem="CF7-FX-l6f" firstAttribute="centerY" secondItem="jvc-Rv-10N" secondAttribute="centerY" id="EAf-dA-nbn"/>
+                            <constraint firstItem="Eoe-ME-zDl" firstAttribute="top" secondItem="jvc-Rv-10N" secondAttribute="bottom" constant="30" id="ULj-53-dD1"/>
+                            <constraint firstItem="Eoe-ME-zDl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="XkT-0h-fmF"/>
+                            <constraint firstItem="Eoe-ME-zDl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a19-Qb-BN9"/>
+                            <constraint firstItem="jvc-Rv-10N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iOI-pi-f9k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Altimeter" image="meter" selectedImage="meter" id="J1j-6U-XAz">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="altitudeLabel" destination="8ou-wx-U4s" id="2wl-Gj-JFo"/>
+                        <outlet property="conditionImageView" destination="jvc-Rv-10N" id="QzJ-sK-3Bm"/>
+                        <outlet property="pressureLabel" destination="1C6-lk-kOo" id="4Kc-Xn-lzY"/>
+                        <outlet property="tempLabel" destination="CF7-FX-l6f" id="iWW-Wv-adp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="-299"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="Fsn-Jl-ZRu">
+            <objects>
+                <viewController id="BtI-CC-nm0" customClass="MapVC" customModule="Altimeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SvS-Km-0Ne">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oqd-Hi-BDk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSd-iN-kpj">
+                                <rect key="frame" x="305" y="659" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="8Bc-HV-U9y"/>
+                                    <constraint firstAttribute="height" constant="50" id="eA9-6d-uxR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.094117647058823528" green="0.12941176470588234" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" image="current-location">
+                                    <color key="titleColor" red="0.094117647060000004" green="0.12941176469999999" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setCurrentLocation:" destination="BtI-CC-nm0" eventType="touchUpInside" id="RWp-WA-e3D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oqd-Hi-BDk" firstAttribute="top" secondItem="SvS-Km-0Ne" secondAttribute="top" id="HTv-01-t30"/>
+                            <constraint firstItem="Oqd-Hi-BDk" firstAttribute="leading" secondItem="DXh-qP-9oL" secondAttribute="leading" id="MoX-8t-vWa"/>
+                            <constraint firstAttribute="bottom" secondItem="Oqd-Hi-BDk" secondAttribute="bottom" id="e53-hf-iFW"/>
+                            <constraint firstItem="DXh-qP-9oL" firstAttribute="trailing" secondItem="aSd-iN-kpj" secondAttribute="trailing" constant="20" id="p5N-0L-UIB"/>
+                            <constraint firstItem="DXh-qP-9oL" firstAttribute="bottom" secondItem="aSd-iN-kpj" secondAttribute="bottom" constant="20" id="qtY-TH-E77"/>
+                            <constraint firstItem="DXh-qP-9oL" firstAttribute="trailing" secondItem="Oqd-Hi-BDk" secondAttribute="trailing" id="rD3-1g-gwr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DXh-qP-9oL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="placeholder" selectedImage="placeholder" id="P7q-kI-Geb">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="locationButton" destination="aSd-iN-kpj" id="FOb-L1-PFO"/>
+                        <outlet property="mapView" destination="Oqd-Hi-BDk" id="Dmw-xb-yx2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9lo-vq-IJ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="381"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vEs-Pe-iKZ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1ln-W1-5yh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BtX-DD-poq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.094117647058823528" green="0.12941176470588234" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.28235294117647058" green="0.55294117647058827" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <outlet property="delegate" destination="BtX-DD-poq" id="xlf-uv-lOV"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="OG9-Bn-WB7"/>
+                        <segue destination="BtI-CC-nm0" kind="relationship" relationship="viewControllers" id="hQD-K8-qFn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7e-Oh-RGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="current-location" width="512" height="512"/>
+        <image name="meter" width="25" height="25"/>
+        <image name="placeholder" width="25" height="25"/>
+    </resources>
+</document>
